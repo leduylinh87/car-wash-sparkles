@@ -1,0 +1,19 @@
+{
+  "name": "carwash",
+  "version": "1.0.0",
+  "description": "Carwash monitor",
+  "main": "main.js",
+  "dependencies": {
+    "express": "^4.16.4",
+    "ip": "^1.1.5",
+    "local-ip": "^2.0.0",
+    "nedb": "^1.8.0",
+    "quick-local-ip": "^1.0.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "LinhLD",
+  "license": "ISC"
+}
