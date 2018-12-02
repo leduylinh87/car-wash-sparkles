@@ -13,7 +13,7 @@ userDB.loadDatabase(function (err) {
 });
 
 const hostname = '0.0.0.0';
-const port = 8888;
+const port =  process.env.PORT || 3000;
 
 var app = express();
 app.use(bodyParser.json()); // for parsing application/json
@@ -23,12 +23,6 @@ app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x
 app.get('/',function(req,res)
 {
 	res.send('Hello World!');
-});
-
-app.post('/', function(req,res)
-{
-    console.log("Receive POST request!");
-	res.send("xxx");
 });
 
 app.post('/Login', function(req,res)
