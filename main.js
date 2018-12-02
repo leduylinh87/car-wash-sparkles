@@ -12,8 +12,8 @@ userDB.loadDatabase(function (err) {
 	}
 });
 
-const hostname = '127.0.0.1';
-const port = 3000;
+const hostname = '0.0.0.0';
+const port = 8888;
 
 var app = express();
 app.use(bodyParser.json()); // for parsing application/json
