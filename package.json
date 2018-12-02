@@ -4,6 +4,7 @@
   "description": "Carwash monitor",
   "main": "main.js",
   "dependencies": {
+    "body-parser": "^1.18.3",
     "express": "^4.16.4",
     "ip": "^1.1.5",
     "local-ip": "^2.0.0",
