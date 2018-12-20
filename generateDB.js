@@ -9,8 +9,21 @@ db.loadDatabase(function (err) {    // Callback is optional
 });
 
 userDB = new Datastore({ filename: 'CarWash-UserDB' });
-
 userDB.loadDatabase(function (err) {    // Callback is optional
+  // Now commands will be executed
+  
+  console.log(err);
+});
+
+packageDB = new Datastore({ filename: 'CarWash-PackageDB' });
+packageDB.loadDatabase(function (err) {    // Callback is optional
+  // Now commands will be executed
+  
+  console.log(err);
+});
+
+addonDB = new Datastore({ filename: 'CarWash-AddonDB' });
+addonDB.loadDatabase(function (err) {    // Callback is optional
   // Now commands will be executed
   
   console.log(err);
